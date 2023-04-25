@@ -1,0 +1,404 @@
+body {
+    min-height: 100%;
+    background-color: #BDB76B;
+    background-image: url('../img/background.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: 'Caveat', cursiva;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 40px auto;  
+    display: grid;
+    align-content: space-between;
+}
+
+h1{
+    color: #fff;
+}
+
+textarea #typedMensagem .resizeNone {
+    color: #FFF;
+}
+
+.resizeNone {
+    resize: none;
+    font-family: 'Caveat', cursiva;
+    color: #FFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.firstItens {
+    display: grid;
+    align-content: space-between;
+}
+
+
+/* ----------Input txt inicial------------- */
+
+
+.textTyped textarea {
+    width: 680px;
+    height: 148px;
+    font-size: x-large;
+    color: #fff;
+}
+
+/* --------------Box Area/Mensagem Erro----------- */
+.title {
+    text-transform: uppercase;
+
+    /* Alterar Media queries */
+    position: relative;
+    bottom: 40px;
+    right: 84px;
+}
+
+#typedMensagem {
+    background-color: #BDB76B;
+    color: #FFF;
+    border: 1px #BDB76B solid;
+
+    /* Alterar Media queries */
+    position: relative;
+    left: 20px;
+    bottom: 168px;
+    border-radius: 32px;
+    padding: 15px;
+}
+
+.areaText,
+.areaTextError {
+    padding: 15px;
+    width: 400px;
+    height: 940px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.boxArea,
+.boxAreaError {
+    display: grid;
+    align-content: center;
+    border: 1px solid #FFF;
+    border-radius: 32px;
+    /* Alterar Media queries */
+    width: 400px;
+    height: 940px;
+    text-align: center;
+    /* background-color: rgba(3, 47, 32, 0.35); */
+    backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    color: #FFF;
+}
+
+.boxAreaError {
+    background-color: #BDB76B;
+    backdrop-filter: blur(2px);
+    border: 1px #f00 solid;
+}
+
+.areaText,
+.areaTextError {
+    padding: 15px;
+    width: 400px;
+    height: 940px;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.areaTextError {
+    height: 200px;
+}
+
+.msgInicial {
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.msgInicial .titulo,
+.msg_error .titulo {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 2px;
+}
+
+.imagemMsg{
+    margin-top: -10px;
+}
+
+.msn_alerta {
+    margin-top: -1px;
+}
+
+.msgInicial .msn_alerta {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    width: 336px;
+}
+
+.msg_error .msn_alerta {
+    font-size: 20px;
+}
+
+.msg_error {
+    text-transform: uppercase;
+}
+
+.alertVetor,
+.pError {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+.pError {
+    color: #f00;
+}
+
+.vetor,
+.vetorError {
+    display: inline-block;
+    text-align: center;
+    background-color: #FFF;
+    color: #808080;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'arial';
+}
+
+.vetorError {
+    background-color: #f00;
+}
+
+
+/*-------------------- Buttons---------------------- */
+
+.boxButton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding: 24px;
+    gap: 8;
+    /* border: #fff 1px solid; */
+}
+
+.buttonCriptografar,
+.buttonDescriptografar {
+    width: 328px;
+    height: 67px;
+    margin-left: 5px;
+    border: 1px solid #BDB76B;
+    border-radius: 24px;
+    background-color: #BDB76B;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.buttonCriptografar {
+    background-color: #BDB76B;
+}
+
+.buttonCriptografar:hover,
+.buttonDescriptografar:hover,
+#copiar:hover {
+    transform: scale(1.06);
+}
+
+#copiar {
+    width: 336px;
+    height: hug(64px);
+    border: 1px solid #BDB76B;
+    border-radius: 24px;
+    padding: 24px;
+    background-color: #BDB76B;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: -2.5%;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+/* --------------------------Media Queries --------------------------- */
+
+@media (max-width: 1580px) {
+
+
+    .title {
+        /* Alterar Media queries */
+        right: 44px;
+    }
+
+    #typedMensagem {
+        /* Alterar Media queries */
+        left: 20px;
+        bottom: 100px;
+    }
+
+    .boxArea,
+    .boxAreaError {
+        /* Alterar Media queries */
+        width: 380px;
+        height: 600px;
+    }
+
+    .areaText,
+    .areaTextError {
+        padding: 15px;
+        width: 345px;
+        height: 390px;
+        overflow: auto;
+        word-wrap: break-word;
+    }
+
+    .msgInicial img {
+        width: 250px;
+    }
+
+}
+
+@media (max-width: 1310px) {
+    .title {
+        /* Alterar Media queries */
+        right: -10px;
+    }
+
+}
+
+@media (max-width: 1115px) {
+    .container {
+        display: inline-block;
+    }
+
+    .firstItens {
+        display: grid;
+        align-content: space-between;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    #typedMensagem {
+        /* Alterar Media queries */
+        left: auto;
+        bottom: auto;
+        margin: auto;
+        width: 100%;
+    }
+
+    .boxButton div {
+        margin: auto;
+    }
+
+    .boxArea,
+    .boxAreaError {
+        /* Alterar Media queries */
+        margin: auto;
+        width: 80%;
+        height: auto;
+    }
+
+    .areaText,
+    .areaTextError {
+        padding: 15px;
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .msgInicial img {
+        display: none;
+    }
+
+    #copiar {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 910px) {
+
+    .buttonCriptografar,
+    .buttonDescriptografar {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .buttonCriptografar,
+    .buttonDescriptografar {
+        width: 270px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 762px) {
+
+    .buttonCriptografar,
+    .buttonDescriptografar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 686px) {
+    .areaText {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .textTyped {
+        width: 300px;
+        margin: auto;
+    }
+
+    .msgInicial .msn_alerta {
+        font-size: 16px;
+        width: 230px;
+    }
+}
